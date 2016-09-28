@@ -71,7 +71,7 @@ app.get('/token_info', function(req, res){
 		});
     
 });
-// il Servizio utilizza le API di Drive per scaricare e creare file
+// il Servizio utilizza le API di Drive per scaricare uno tra 3 file prelevabili
 var Drive; 
 var newFileID;
 var file1id, file2id, file3id; //i file id che mi servono per lanciare la richiesta di download
@@ -82,10 +82,7 @@ var FileNames = new Array();
 app.get('/drive', function(req,res){
 	
 	Drive = google.drive({version : 'v3', auth: OAuth2});
-	console.log("Access_token is :"+credentials[0]);
-	var headers = {'Authorization': 'Bearer '+credentials[0]};
-	var url = "https://www.googleapis.com/drive/v3/files/generateIds?count=1&space=drive&access_token="+credentials[0];
-	
+	console.log("Access_token is :"+credentials[0]);	
 	
 	var request2 = require('request');
 	

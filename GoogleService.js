@@ -73,7 +73,6 @@ app.get('/token_info', function(req, res){
 });
 // il Servizio utilizza le API di Drive per scaricare uno tra 3 file prelevabili
 var Drive; 
-var newFileID;
 var file1id, file2id, file3id; //i file id che mi servono per lanciare la richiesta di download
 var A_obj;
 var FileIDs;

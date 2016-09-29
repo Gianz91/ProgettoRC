@@ -15,3 +15,8 @@ L'applicazione è salvata su GoogleService.js e va fatta partire dal prompt di N
 Per informazioni sulla valorizzazione di questi campi e della loro creazione, si rimanda alle delucidazione sul <a href="https://developers.google.com/identity/protocols/OAuth2">protocollo Oauth di Google</a>
 
 Prelevando poi le informazioni per l'autenticazione, e l'access_token relativo, il servizio permetterà di scegliere uno tra tre file e scaricarli esportandoli in formato .pdf
+
+
+Per far girare l'applicazione occorre installare <a href="https://nodejs.org/en/"> Nodejs<a> e seguire gli step per creare una directory dove salvare le cartelle scaricate da questa repository. Fatto questo, basta far partire dal prompt di Nodejs il comando
+
+<code>node GoogleService.js</code>

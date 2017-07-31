@@ -167,7 +167,7 @@ app.get('/download/3',function(req,res){
       process.exit();
     }).pipe(dest);
 	 dest.on('finish', function () {
-        console.log('Downloaded %s!', file1);
+        console.log('Downloaded %s!', file3);
         process.exit();
       }).on('error', function (err) {
         console.log('Error writing file', err);
